@@ -164,7 +164,7 @@ ul {
   /* color: var(--Header-menu-studiy-index-color); */
   /*задаём цвет ссылки*/
   cursor: pointer;
-  line-height: 1;
+  /* line-height: 1; */
   /*задаём высоту строки*/
   text-decoration: none;
   /*убираем подчёркивание*/
@@ -176,7 +176,7 @@ ul {
   /*изменить на right:0;, чтобы изменить направление подчёркивания */
   width: 0;
   /*задаём длинну линии до наведения курсора*/
-  height: 2px;
+  height: 4px;
   /*задаём ширину линии*/
   background-color: var(--Header-menu-studiy-index-color);
   /*задаём цвет линии*/
@@ -208,7 +208,7 @@ ul {
       /* color: var(--Header-menu-studiy-index-color); */
       /*задаём цвет ссылки*/
       cursor: pointer;
-      line-height: 1;
+      /* line-height: 1; */
       /*задаём высоту строки*/
       text-decoration: none;
       /*убираем подчёркивание*/
@@ -221,7 +221,7 @@ ul {
   /*изменить на right:0;, чтобы изменить направление подчёркивания */
   width: 0;
   /*задаём длинну линии до наведения курсора*/
-  height: 2px;
+  height: 4px;
   /*задаём ширину линии*/
   background-color: var(--Header-menu-studiy-index-color);
   /*задаём цвет линии*/
