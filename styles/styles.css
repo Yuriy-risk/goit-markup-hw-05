@@ -151,14 +151,13 @@ ul {
 
 .header-menu-studiy-index {
   font-weight: 500;
-    font-size: 14px;
-    line-height: 1.14;
-    letter-spacing: 0.02em;
-    color: var(--Header-menu-studiy-index-color);
-  
-    padding: 32px 0;
-    display: block;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  color: var(--Header-menu-studiy-index-color);
 
+  padding: 32px 0;
+  display: block;
 
   position: relative;
   /* color: var(--Header-menu-studiy-index-color); */
@@ -191,8 +190,6 @@ ul {
   /*устанавливаем значение 100% чтобы ссылка подчёркивалась полностью*/
 }
 
-
-
 .header-menu-portfolio {
   font-weight: 500;
   font-size: 14px;
@@ -203,15 +200,14 @@ ul {
   padding: 32px 0;
   display: block;
 
-
-    position: relative;
-      /* color: var(--Header-menu-studiy-index-color); */
-      /*задаём цвет ссылки*/
-      cursor: pointer;
-      /* line-height: 1; */
-      /*задаём высоту строки*/
-      text-decoration: none;
-      /*убираем подчёркивание*/
+  position: relative;
+  /* color: var(--Header-menu-studiy-index-color); */
+  /*задаём цвет ссылки*/
+  cursor: pointer;
+  /* line-height: 1; */
+  /*задаём высоту строки*/
+  text-decoration: none;
+  /*убираем подчёркивание*/
 }
 
 .header-menu-portfolio:after {
@@ -230,10 +226,10 @@ ul {
   /*задаём время анимации*/
 }
 
-.header-menu-portfolio:hover:after, 
-.header-menu-portfolio:focus:after{
-    width: 100%;
-      /*устанавливаем значение 100% чтобы ссылка подчёркивалась полностью*/
+.header-menu-portfolio:hover:after,
+.header-menu-portfolio:focus:after {
+  width: 100%;
+  /*устанавливаем значение 100% чтобы ссылка подчёркивалась полностью*/
 }
 
 .header-menu-studiy {
@@ -286,8 +282,6 @@ ul {
 .header-menu:hover::after {
   opacity: 1;
 } */
-
-
 
 .main-main-content {
   font-weight: 900;
@@ -362,7 +356,6 @@ ul {
 .adress-mail-tel:hover::after {
   opacity: 1;
 } */
-
 
 .main-botton-all {
   /* font-family: "Roboto", sans-serif; */
