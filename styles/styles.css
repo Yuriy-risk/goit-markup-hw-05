@@ -60,7 +60,8 @@ ul {
   height: 50px;
   border: none;
 
-  /* transition: color 250ms, background-color 250ms, fill 250ms, fill 250ms; */
+  /* transition: color 250ms, background-color 250ms cubic-bezier(0.4, 0, 0.2, 1) */
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .close-botton {
   display: flex;
@@ -74,16 +75,6 @@ ul {
   top: 8px;
   right: 8px;
   cursor: pointer;
-  /* justify-content: right ; */
-
-  /* width: 26px;
-  height: 26px; */
-  /* margin: 40px auto; */
-  /* position: relative; */
-  /* transform: rotate(45deg) scale(2); */
-
-  /* padding: 20px;
-  border-radius: 50%; */
 
   width: 30px;
   height: 30px;
@@ -92,9 +83,7 @@ ul {
   border: 1px solid rgba(0, 0, 0, 0.1);
 }
 
-.main-botton:hover {
-  background-color: var(--Main-botton-hover-background-color);
-}
+.main-botton:hover,
 .main-botton:focus {
   background-color: var(--Main-botton-hover-background-color);
 }
@@ -138,16 +127,6 @@ ul {
 
   color: var(--Footer-Studio-color);
 }
-/* .header-menu-studiy-index {
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.02em;
-  color: var(--Header-menu-studiy-index-color);
-
-  padding: 32px 0;
-  display: block;
-} */
 
 .header-menu-studiy-index {
   font-weight: 500;
@@ -169,25 +148,21 @@ ul {
   /*убираем подчёркивание*/
 }
 .header-menu-studiy-index:after {
+  margin-top: 28px;
   display: block;
   position: absolute;
   left: 0;
   /*изменить на right:0;, чтобы изменить направление подчёркивания */
-  width: 0;
+  width: 100%;
   /*задаём длинну линии до наведения курсора*/
   height: 4px;
   /*задаём ширину линии*/
   background-color: var(--Header-menu-studiy-index-color);
   /*задаём цвет линии*/
   content: "";
-  transition: width 0.3s ease-out;
+  /* transition: width 0.3s ease-out; */
   /*задаём время анимации*/
-}
-
-.header-menu-studiy-index:hover:after,
-.header-menu-studiy-index:focus:after {
-  width: 100%;
-  /*устанавливаем значение 100% чтобы ссылка подчёркивалась полностью*/
+  border-radius: 2px;
 }
 
 .header-menu-portfolio {
@@ -211,25 +186,21 @@ ul {
 }
 
 .header-menu-portfolio:after {
+  margin-top: 28px;
   display: block;
   position: absolute;
   left: 0;
   /*изменить на right:0;, чтобы изменить направление подчёркивания */
-  width: 0;
+  width: 100%;
   /*задаём длинну линии до наведения курсора*/
   height: 4px;
   /*задаём ширину линии*/
   background-color: var(--Header-menu-studiy-index-color);
   /*задаём цвет линии*/
   content: "";
-  transition: width 0.3s ease-out;
+  /* transition: width 0.3s ease-out; */
   /*задаём время анимации*/
-}
-
-.header-menu-portfolio:hover:after,
-.header-menu-portfolio:focus:after {
-  width: 100%;
-  /*устанавливаем значение 100% чтобы ссылка подчёркивалась полностью*/
+  border-radius: 2px;
 }
 
 .header-menu-studiy {
@@ -243,17 +214,14 @@ ul {
   padding: 32px 0;
   display: block;
 
-  /* display: flex;
-  align-items: center;
-  justify-content: center; */
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.header-menu-studiy:hover {
-  color: var(--Header-menu-hover-color);
-}
+.header-menu-studiy:hover,
 .header-menu-studiy:focus {
   color: var(--Header-menu-hover-color);
 }
+
 .header-menu {
   font-weight: 500;
   font-size: 14px;
@@ -262,26 +230,14 @@ ul {
   color: var(--Header-style-text-color);
   padding: 32px 0;
   display: block;
+
+  /* transition: opacity 1000ms, visibility 1000ms; */
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .header-menu:hover,
 .header-menu:focus {
   color: var(--Header-menu-hover-color);
 }
-
-/* .header-menu::after {
-  display: block;
-  opacity: 0;
-  width: 100%;
-  height: 1px;
-  margin-top: -2px;
-  background-color: currentColor;
-  transition: opacity 250ms;
-  content: '';
-}
-
-.header-menu:hover::after {
-  opacity: 1;
-} */
 
 .main-main-content {
   font-weight: 900;
@@ -306,26 +262,12 @@ ul {
   line-height: 1.7;
   letter-spacing: 0.03em;
   color: var(--Adress-Style-color);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .adress:hover,
 .adress:focus {
   color: var(--Adress-hover-color);
 }
-
-/* .adress::after {
-  display: block;
-  opacity: 0;
-  width: 88%;
-  height: 1px;
-  margin-top: -2px;
-  background-color: currentColor;
-  transition: opacity 250ms;
-  content: '';
-}
-
-.adress:hover::after {
-  opacity: 1;
-} */
 
 .adress-mail-tel {
   font-family: "Roboto", sans-serif;
@@ -336,26 +278,12 @@ ul {
 
   color: var(--Adress-mail-tel-color);
   margin-top: 19px;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .adress-mail-tel:hover,
 .adress-mail-tel:focus {
   color: var(--Adress-mail-tel-hover-color);
 }
-
-/* .adress-mail-tel::after {
-  display: block;
-  opacity: 0;
-  width: 60%;
-  height: 1px;
-  margin-top: -2px;
-  background-color: currentColor;
-  transition: opacity 250ms;
-  content: '';
-}
-
-.adress-mail-tel:hover::after {
-  opacity: 1;
-} */
 
 .main-botton-all {
   /* font-family: "Roboto", sans-serif; */
@@ -375,17 +303,15 @@ ul {
   border-radius: 4px;
   padding: 6px 25px;
   border: none;
+  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.main-botton-all:hover {
-  /* box-shadow: 10px 5px 5px black; */
-  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
-    0px 2px 2px rgba(0, 0, 0, 0.12);
-}
+.main-botton-all:hover,
 .main-botton-all:focus {
   /* box-shadow: 10px 5px 5px black; */
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
     0px 2px 2px rgba(0, 0, 0, 0.12);
 }
+
 .main-bottons {
   font-family: "Roboto", sans-serif;
 
@@ -404,14 +330,10 @@ ul {
   border-radius: 4px;
   padding: 6px 22px;
   border: none;
+  transition: background-color 250ms,
+    box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.main-bottons:hover {
-  background-color: var(--Main-bottons-hover-background-color);
-  color: var(--Main-bottons-hover-color);
-  /* box-shadow: 10px 5px 5px black; */
-  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
-    0px 2px 2px rgba(0, 0, 0, 0.12);
-}
+.main-bottons:hover,
 .main-bottons:focus {
   background-color: var(--Main-bottons-hover-background-color);
   color: var(--Main-bottons-hover-color);
@@ -542,8 +464,6 @@ a {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  /* margin-bottom: 94px; */
-  /* margin-right: 215px; */
 }
 .header-nav {
   /* горизонтальное размещение контейнера */
@@ -657,10 +577,7 @@ img {
 }
 .hero {
   padding: 200px 0px;
-  /* background-color: #2f303a; */
 
-  /* background-image: url(../img/Img.jpg);
-  background-image: rgba(47, 48, 58, 0.4);  */
   background-image: linear-gradient(
       to right,
       rgba(47, 48, 58, 0.4),
@@ -737,13 +654,10 @@ font-style: normal; */
 
   border: 1px solid #afb1b8;
   border-radius: 4px;
+  transition: fill 250ms, border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.soc-item:hover,
-.soc-item:focus {
-  fill: #188ce8;
-  border-color: #188ce8;
-}
-.net-icon:hover {
+.net-icon:hover,
+.net-icon:focus {
   fill: #188ce8;
   border-color: #188ce8;
 }
@@ -753,23 +667,6 @@ font-style: normal; */
   fill: #2196f3;
 }
 
-/* .header-menu-studiy::after {
-  display: block;
-  opacity: 0;
-  width: 100%;
-  height: 1px;
-  margin-top: -2px;
-  background-color: currentColor;
-  transition: opacity 250ms;
-  content: '';
-}
-.header-menu-studiy:hover::after{
-  opacity:1;
-} */
-
-/* .header-menu-studiy:focus .net-mail-tel-icon {
-  fill: #2196f3;
-} */
 .ico-main-content-team {
   display: flex;
   justify-content: center;
@@ -796,6 +693,8 @@ font-style: normal; */
   display: flex;
   align-items: center;
   justify-content: center;
+
+  transition: fill 250ms, background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .net-icon-team:hover,
 .net-icon-team:focus {
@@ -821,6 +720,7 @@ font-style: normal; */
   align-items: center;
   justify-content: center;
   fill: #ffffff;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .net-icon-footer:hover,
 .net-icon-footer:focus {
@@ -859,22 +759,20 @@ font-style: normal; */
 }
 .net-mail-tel-icon {
   margin-right: 10px;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .portfolio-container-deployed-shadow {
   display: block;
 }
 
-.portfolio-container-deployed-shadow:hover {
-  display: block;
-  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
-    1px 4px 6px rgba(0, 0, 0, 0.16);
-}
+.portfolio-container-deployed-shadow:hover,
 .portfolio-container-deployed-shadow:focus {
   display: block;
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
 }
+
 .backdrop.is-hidden {
   visibility: hidden;
   opacity: 0;
@@ -889,7 +787,7 @@ font-style: normal; */
   z-index: 1;
   background-color: rgba(0, 0, 0, 0.2);
 
-  transition: opacity 1000ms, visibility 1000ms;
+  transition: opacity 250ms, visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .modal {
   position: absolute;
@@ -909,13 +807,17 @@ font-style: normal; */
   background-color: rgba(33, 150, 243, 0.9);
 
   padding: 64px 50px;
-  color: #ffffff;
+  /* color: #ffffff; */
   transform: translateY(100%);
   /* плавный переход */
   transition: transform 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+  padding: 63px 24px;
+
 }
-.portfolio-deployed-shadow-img:hover .feature-description {
+.portfolio-container-deployed-shadow:hover .feature-description,
+.portfolio-container-deployed-shadow:focus .feature-description {
   transform: translateY(0%);
 }
 .portfolio-deployed-shadow-img {
@@ -947,22 +849,18 @@ font-style: normal; */
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: #ffffff;
+  margin-top: 0px;
+  margin-bottom: 0px;
 }
 
-/* .link {
-  color: #188ce8;
-  text-decoration: none;
+.content-modal {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.555;
+  letter-spacing: 0.03em;
+
+  color: #ffffff;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  width: 322px;
 }
-.link::after {
-  display: block;
-  opacity: 0;
-  width: 100%;
-  height: 1px;
-  margin-top: -2px;
-  background-color: currentColor;
-  transition: opacity 250ms;
-  content: "";
-}
-.link:hover::after {
-  opacity: 1;
-} */
